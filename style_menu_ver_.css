@@ -1,0 +1,150 @@
+/* Minecraft Weboldal - Stiluslap */
+
+/* 1. Body */
+body {
+    background-color: #f0f8ff;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Fejlec */
+header {
+    background-image: url('bg.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 129px;
+    height: 129px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+header img {
+    height: 120px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* 3. Oldalszerkezet */
+#tarto {
+    display: flex;
+}
+
+/* 4. Bal oldali menu */
+#nav {
+    width: 200px;
+    background-color: #333;
+    flex-shrink: 0;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 14px 20px;
+}
+
+#nav a:hover {
+    background-color: #72b876;
+}
+
+#nav a.active {
+    background-color: #4CAF50;
+    border-top: 1px dashed #a5d6a7;
+    border-bottom: 1px dashed #a5d6a7;
+}
+
+/* 5. Tartalmi keret */
+#keret {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* 6. Fo tartalmi resz */
+#tartalom {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #e9f7ef;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* 7. Tartalmi kepek */
+img.balra {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+img.jobbra {
+    float: right;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+img.balra, img.jobbra {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* 8. Bekezdések */
+#tartalom p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+/* 9. Tablazat */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+table td:nth-child(2) {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 10. Lablec */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #4CAF50;
+}
